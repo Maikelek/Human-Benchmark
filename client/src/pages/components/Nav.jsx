@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { FaBolt } from "react-icons/fa";
 
 const Navbar = () => {
@@ -11,9 +12,9 @@ const Navbar = () => {
     return (
         <nav className="navbar">
             <div className="navbar-left">
-                <a href="#" className="navbar-logo">
+                <Link to={"/"} className="navbar-logo">
                     <FaBolt /> HUMAN BENCHMARK
-                </a>
+                </Link>
             </div>
             <div className="hamburger" onClick={toggleMenu}>
                 <div></div>
@@ -21,13 +22,13 @@ const Navbar = () => {
                 <div></div>
             </div>
             <div className={`mobile-menu ${menuOpen ? "active" : ""}`}>
-                <a href="#dashboard" onClick={toggleMenu}>DASHBOARD</a>
-                <a href="#signup" onClick={toggleMenu}>SIGN UP</a>
-                <a href="#login" onClick={toggleMenu}>LOGIN</a>
+                <Link to={"/"} onClick={toggleMenu}>Home</Link>
+                <Link to={"/register"} onClick={toggleMenu}>SIGN UP</Link>
+                <Link to={"/login"} onClick={toggleMenu}>LOGIN</Link>
             </div>
             <div className="navbar-right">
-                <a href="#signup">SIGN UP</a>
-                <a href="#login">LOGIN</a>
+                <Link to={"/register"}>SIGN UP</Link>
+                <Link to={"/login"}>LOGIN</Link>
             </div>
         </nav>
     );
