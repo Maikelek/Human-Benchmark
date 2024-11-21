@@ -4,6 +4,8 @@ import Index from "./pages/Index"
 import Login from "./pages/Login"
 import Register from "./pages/Register";
 
+import ReactionTime from "./pages/ReactionTime";
+
 import "./App.css";
 
 
@@ -16,6 +18,7 @@ function App() {
           <Route path="/login" element={<Login/>}/>
           <Route path="/register" element={<Register/>}/>
 
+          <Route path="/reaction-time" element={<ReactionTime/>}/>
       
         </Routes>
       </BrowserRouter>

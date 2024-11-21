@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { FaLock, FaEnvelope, FaEye, FaEyeSlash, FaRegUserCircle} from 'react-icons/fa';
 
 import Nav from './components/Nav';
+import { Link } from 'react-router-dom';
 
 const Register = () => {
     const [passwordVisible, setPasswordVisible] = useState(false);
@@ -70,7 +71,7 @@ const Register = () => {
                 </form>
 
                 <div className="register-link">
-                    <p>Already have an account? <a href="/register">Sign in</a></p>
+                    <p>Already have an account? <Link to={"/login"}>Sign in</Link></p>
                 </div>
                 
             </div>

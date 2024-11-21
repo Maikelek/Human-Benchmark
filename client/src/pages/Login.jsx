@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { FaLock, FaEnvelope, FaEye, FaEyeSlash } from 'react-icons/fa';
 
 import Nav from './components/Nav';
+import { Link } from 'react-router-dom';
 
 const Login = () => {
     const [passwordVisible, setPasswordVisible] = useState(false);
@@ -47,7 +48,7 @@ const Login = () => {
                 </form>
 
                 <div className="register-link">
-                    <p>Don't have an account? <a href="/register">Sign up</a></p>
+                    <p>Don't have an account? <Link to={"/register"}>Sign up</Link></p>
                 </div>
 
             </div>

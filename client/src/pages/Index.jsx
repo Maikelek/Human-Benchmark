@@ -3,7 +3,8 @@ import React from "react";
 import Footer from "./components/Footer";
 import Nav from "./components/Nav";
 
-import { FaBolt, FaBullseye, FaChessBoard , FaCalculator, FaGripHorizontal  } from "react-icons/fa";
+import { FaBolt, FaBullseye, FaChessBoard , FaCalculator, FaGripHorizontal, FaSortAlphaDown } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Index = () => {
     return (
@@ -19,11 +20,11 @@ const Index = () => {
 
             <div className="benchmark-tests">
 
-                <div className="benchmark-test">
+                <Link to={"/reaction-time"} className="benchmark-test">
                     <div className="benchmark-test-icon"><FaBolt/></div>
                     <h3>Reaction Time</h3>
                     <p>Test your visual reflexes</p>
-                </div>
+                </Link>
 
                 <div className="benchmark-test">
                     <div className="benchmark-test-icon"><FaChessBoard/></div>
@@ -44,7 +45,7 @@ const Index = () => {
                 </div>
 
                 <div className="benchmark-test">
-                    <div className="benchmark-test-icon"><FaCalculator/></div>
+                    <div className="benchmark-test-icon"><FaSortAlphaDown/></div>
                     <h3>Verbal Memory</h3>
                     <p>Keep as many words in short term memory as possible</p>
                 </div>
