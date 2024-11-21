@@ -6,6 +6,8 @@ import Register from "./pages/Register";
 
 import ReactionTime from "./pages/ReactionTime";
 
+import AimTrainer from "./pages/AimTrainer";
+
 import "./App.css";
 
 
@@ -19,6 +21,7 @@ function App() {
           <Route path="/register" element={<Register/>}/>
 
           <Route path="/reaction-time" element={<ReactionTime/>}/>
+          <Route path="/aim-trainer" element={<AimTrainer/>}/>
       
         </Routes>
       </BrowserRouter>

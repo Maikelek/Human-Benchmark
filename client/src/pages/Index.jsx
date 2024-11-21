@@ -32,11 +32,11 @@ const Index = () => {
                     <p>Remember an increasingly long pattern</p>
                 </div>
 
-                <div className="benchmark-test">
+                <Link to={"/aim-trainer"} className="benchmark-test">
                     <div className="benchmark-test-icon"><FaBullseye/></div>
                     <h3>Aim Trainer</h3>
                     <p>Hit all the targets in shortest time</p>
-                </div>
+                </Link>
 
                 <div className="benchmark-test">
                     <div className="benchmark-test-icon"><FaCalculator/></div>
