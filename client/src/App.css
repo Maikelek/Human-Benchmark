@@ -367,3 +367,46 @@
   height: 45vh;
   bottom: -25px;
 }
+
+.verbal-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #000;
+  background-color: #FFD54F;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 1rem;
+  transition: transform 0.2s;
+  font-weight: bold;
+}
+
+.verbal-button:hover {
+  transform: scale(1.05);
+}
+
+.verbal-button:active {
+  transform: scale(0.95);
+}
+
+.word-text {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+  .game-container {
+    width: 100%;
+  }
+
+  .stats-label {
+    top: 5%;
+    font-size: 1.5rem;
+  }
+
+  .word-text {
+    margin-top: 50px;
+    font-size: 2rem;
+  }
+}

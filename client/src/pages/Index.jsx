@@ -44,11 +44,11 @@ const Index = () => {
                     <p>Remember the longest number you can</p>
                 </div>
 
-                <div className="benchmark-test">
+                <Link to={"verbal-memory"} className="benchmark-test">
                     <div className="benchmark-test-icon"><FaSortAlphaDown/></div>
                     <h3>Verbal Memory</h3>
                     <p>Keep as many words in short term memory as possible</p>
-                </div>
+                </Link>
 
                 <div className="benchmark-test">
                     <div className="benchmark-test-icon"><FaGripHorizontal/></div>

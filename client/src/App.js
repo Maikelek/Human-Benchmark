@@ -5,8 +5,8 @@ import Login from "./pages/Login"
 import Register from "./pages/Register";
 
 import ReactionTime from "./pages/ReactionTime";
-
 import AimTrainer from "./pages/AimTrainer";
+import VerbalMemory from "./pages/VerbalMemory";
 
 import "./App.css";
 
@@ -22,6 +22,7 @@ function App() {
 
           <Route path="/reaction-time" element={<ReactionTime/>}/>
           <Route path="/aim-trainer" element={<AimTrainer/>}/>
+          <Route path="/verbal-memory" element={<VerbalMemory/>}/>
       
         </Routes>
       </BrowserRouter>
